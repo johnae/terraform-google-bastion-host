@@ -62,6 +62,11 @@ variable "machine_type" {
   default     = "n1-standard-1"
 }
 
+variable "can_ip_forward" {
+  type = bool
+  default = false
+}
+
 variable "members" {
   type = list(string)
 
