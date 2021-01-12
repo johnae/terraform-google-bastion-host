@@ -61,6 +61,7 @@ module "instance_template" {
   source_image_family  = var.image_family
   source_image_project = var.image_project
   startup_script       = var.startup_script
+  can_ip_forward       = var.can_ip_forward
 
   tags = var.tags
 
